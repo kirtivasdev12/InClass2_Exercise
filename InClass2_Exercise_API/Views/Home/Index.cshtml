@@ -1,0 +1,24 @@
+﻿@model InClass2_Exercise_API.Models.Parks
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>In-class: API consumption - Assignment By Bibhas K Bera </h2>
+<h4>This Page returns first 10 rows from National Park Services API</h4>
+<table>
+    <thead>
+        <tr><th>Park_Name</th><th>State</th><th>Park_Website</th></tr>
+    </thead>
+    <tbody>
+        @foreach (InClass2_Exercise_API.Models.Park park in Model.data)
+        {
+        <tr>
+            <td>@park.fullName</td>
+            <td>@park.states</td>
+            <td><a href="@park.url">Website</a></td>
+        </tr>
+        }
+    </tbody>
+</table>
+
