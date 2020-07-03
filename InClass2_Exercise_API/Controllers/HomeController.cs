@@ -57,7 +57,7 @@ namespace InClass2_Exercise_API.Controllers
             }
             catch (Exception e)
             {
-                // This is a useful place to insert a breakpoint and observe the error message
+                // This is a useful place to insert a breakpoint and observe the error message  
                 Console.WriteLine(e.Message);
             }
 
